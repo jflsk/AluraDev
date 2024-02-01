@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 20%;
+}
+
+input[type=text] {
+        display: flex;
+        background-color: white ;
+        opacity: 0.16;
+        box-sizing: border-box;
+        width: 47em;
+        height: 3.5em;
+        border-radius: 8px;
+}
+
+.header__user-info {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-end;
+}
