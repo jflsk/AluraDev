@@ -1,0 +1,50 @@
+.nav {
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 1em;
+}
+
+.nav__menu {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.nav__editor {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#button__menu__pressed {
+    background-color: rgb(80, 129, 251, 1);
+}
+
+#a__menu__pressed {
+    color: rgb(255, 255, 255, 1);
+}
+
+.nav__community {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#button__menu__unpressed {
+    background-color: rgb(80, 129, 251, 0.16);
+}
+
+#button__menu__unpressed:hover {
+    transition: 0.2s;
+    background-color: rgb(80, 129, 251, 0.56);
+}
+
+#a__menu__unpressed {
+    color: rgb(255, 255, 255, 0.56);
+}

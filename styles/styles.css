@@ -1,11 +1,51 @@
 @import url("header.css");
+@import url("navbar.css");
 
 :root {
     --background-color: #051d3b;
-
 }
 
-body {
+body {  
     background-color: var(--background-color);
     margin: 2em;
+    color: #ffffff;
+    font-family: Inter;
 }
+
+a {
+    text-decoration: none;
+}
+
+input[type=text] {
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.16);
+    box-sizing: border-box;
+    border: none;
+    width: 47em;
+    height: 3.5em;
+    border-radius: 8px;
+    padding: 1em;
+    transition: 0.2s;
+}
+
+input[type=text]:hover {
+    background-color: rgb(255, 255, 255, 0.24);
+
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+button {
+    width: 3em;
+    height: 3em;
+    border: none;
+    border-radius: 8px;
+}
+
+button img {
+    vertical-align: middle;
+}
+

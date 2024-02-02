@@ -7,6 +7,9 @@
     <title>AluraDev</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <header class="header">
     <div class="header__logo">
@@ -14,15 +17,29 @@
     </div>
 
     <div class="header__searchbox">
-        <input type="text" placeholder="Busque por Algo">
+        <input type="text" id="search" placeholder="Busque por algo">
     </div>
 
     <div class="header__user-info">
         <img src="./assets/Photo.svg" alt="Avatar do Usuário">
-        <p>Nome do Usuário</p>
+        <p>Harry</p>
     </div>
 </header>
 <body>
-    
+    <div class="nav">
+        <p class="nav__menu">Menu</p>
+        <div class="nav__editor">
+            <button id="button__menu__pressed">
+                <img src="./assets/Code Icon.svg" alt="Ícone Editor de Código">
+            </button>
+            <a id="a__menu__pressed" href="#">Editor de Código</a>
+        </div>
+        <div class="nav__community">
+            <button id="button__menu__unpressed">
+                <img src="./assets/Users Icon.svg" alt="Ícone Comunidade">
+            </button>
+            <a id="a__menu__unpressed" href="#">Comunidade</a>
+        </div>
+    </div>
 </body>
 </html>
