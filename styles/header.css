@@ -11,6 +11,17 @@
     width: 20%;
 }
 
+.header__searchbox {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.header input {
+    width: 60%;
+    height: 3.5em;
+}
+
 .header__user-info {
     width: 20%;
     display: flex;

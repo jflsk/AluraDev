@@ -26,20 +26,51 @@
     </div>
 </header>
 <body>
-    <div class="nav">
-        <p class="nav__menu">Menu</p>
-        <div class="nav__editor">
-            <button id="button__menu__pressed">
-                <img src="./assets/Code Icon.svg" alt="Ícone Editor de Código">
-            </button>
-            <a id="a__menu__pressed" href="#">Editor de Código</a>
+    <section class="content">
+        <div class="content__nav">
+            <p class="content__nav__menu">Menu</p>
+            <div class="content__nav__editor">
+                <button id="button__menu__pressed">
+                    <img src="./assets/Code Icon.svg" alt="Ícone Editor de Código">
+                </button>
+                <a id="a__menu__pressed" href="#">Editor de Código</a>
+            </div>
+            <div class="content__nav__community">
+                <button id="button__menu__unpressed">
+                    <img src="./assets/Users Icon.svg" alt="Ícone Comunidade">
+                </button>
+                <a id="a__menu__unpressed" href="#">Comunidade</a>
+            </div>
         </div>
-        <div class="nav__community">
-            <button id="button__menu__unpressed">
-                <img src="./assets/Users Icon.svg" alt="Ícone Comunidade">
-            </button>
-            <a id="a__menu__unpressed" href="#">Comunidade</a>
+
+        <div class="content__editor">
+
         </div>
-    </div>
+
+        <div class="content__project-desc">
+            <section class="content__project-desc__myProject">
+                <p class="content__project-desc__myProject__title">Meu Projeto</p>
+
+                <input type="text" id="title" placeholder="Nome do seu projeto">
+
+                <textarea class="content__project-desc__myProject__desc" placeholder="Descrição do seu projeto">
+                </textarea>
+            </section>
+
+            <section class="content__project-desc__myCustom">
+                <p class="content__project-desc__myProject__title">Personalização</p>
+
+                <select>
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+
+                <input type="color" id="colorPicker">
+
+                <button id="content__project-des__myCustom__saveButton">Salvar Projeto</button>
+            </section>
+        </div>
+        
 </body>
 </html>

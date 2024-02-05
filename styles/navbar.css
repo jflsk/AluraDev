@@ -1,19 +1,18 @@
-.nav {
-    padding: 2em 0 2em 0;
+.content__nav {
     display: flex;
     flex-direction: column;
     width: 20%;
     gap: 1em;
 }
 
-.nav__menu {
+.content__nav__menu {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
 }
 
-.nav__editor {
+.content__nav__editor {
     gap: 1em;
     display: flex;
     flex-direction: row;
@@ -28,21 +27,27 @@
     color: rgb(255, 255, 255, 1);
 }
 
-.nav__community {
+.content__nav__community {
     gap: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: 0.3s;
+}
+
+.content__nav__community:hover #button__menu__unpressed {
+    transition: 0.3s;
+    background-color: rgb(80, 129, 251, 0.56);
+}
+
+.content__nav__community:hover #a__menu__unpressed {
+    transition: 0.3s;
+    color: rgb(255, 255, 255, 0.8);
 
 }
 
 #button__menu__unpressed {
     background-color: rgb(80, 129, 251, 0.16);
-}
-
-#button__menu__unpressed:hover {
-    transition: 0.2s;
-    background-color: rgb(80, 129, 251, 0.56);
 }
 
 #a__menu__unpressed {
