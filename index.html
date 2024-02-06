@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
 </head>
 <header class="header">
     <div class="header__logo">
@@ -44,6 +46,17 @@
         </div>
 
         <div class="content__editor">
+            <div class="content__editor__bg">
+                <div class="content__editor__bg__areaEdit">
+                    <div class="editor__bg__areaEdit__circles">
+                        <div class="bg__areaEdit__circles red"></div> <div class="bg__areaEdit__circles yellow"></div> <div class="bg__areaEdit__circles green"></div>
+                    </div>
+
+                    <code class="editor__bg__textCode" contenteditable="true"></code>
+                </div>
+            </div>
+            
+            <button id="editor__highlight">Visualizar com o Highlight</button>
 
         </div>
 
@@ -53,8 +66,7 @@
 
                 <input type="text" id="title" placeholder="Nome do seu projeto">
 
-                <textarea class="content__project-desc__myProject__desc" placeholder="Descrição do seu projeto">
-                </textarea>
+                <textarea class="content__project-desc__myProject__desc" placeholder="Descrição do seu projeto"></textarea>
             </section>
 
             <section class="content__project-desc__myCustom">
@@ -69,8 +81,6 @@
                 <input type="color" id="colorPicker">
 
                 <button id="content__project-des__myCustom__saveButton">Salvar Projeto</button>
-            </section>
-        </div>
-        
+            </section>        
 </body>
 </html>
