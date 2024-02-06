@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: 0.3s;
 }
 
 #button__menu__pressed {
@@ -43,7 +44,16 @@
 .content__nav__community:hover #a__menu__unpressed {
     transition: 0.3s;
     color: rgb(255, 255, 255, 0.8);
+}
 
+.content__nav__editor:hover #button__menu__unpressed {
+    transition: 0.3s;
+    background-color: rgb(80, 129, 251, 0.56);
+}
+
+.content__nav__editor:hover #a__menu__unpressed {
+    transition: 0.3s;
+    color: rgb(255, 255, 255, 0.8);
 }
 
 #button__menu__unpressed {
