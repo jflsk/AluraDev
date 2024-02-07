@@ -1,65 +1,65 @@
 .content__nav {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 1em;
 }
 
 .content__nav__menu {
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 18px;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .content__nav__editor {
-    gap: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  transition: .3s;
 }
 
 #button__menu__pressed {
-    background-color: rgb(80, 129, 251, 1);
+  background-color: rgb(80,129,251,1);
 }
 
 #a__menu__pressed {
-    color: rgb(255, 255, 255, 1);
+  color: rgb(255,255,255,1);
 }
 
 .content__nav__community {
-    gap: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  transition: .3s;
 }
 
 .content__nav__community:hover #button__menu__unpressed {
-    transition: 0.3s;
-    background-color: rgb(80, 129, 251, 0.56);
+  transition: .3s;
+  background-color: rgb(80,129,251,.56);
 }
 
 .content__nav__community:hover #a__menu__unpressed {
-    transition: 0.3s;
-    color: rgb(255, 255, 255, 0.8);
+  transition: .3s;
+  color: rgb(255,255,255,.8);
 }
 
 .content__nav__editor:hover #button__menu__unpressed {
-    transition: 0.3s;
-    background-color: rgb(80, 129, 251, 0.56);
+  transition: .3s;
+  background-color: rgb(80,129,251,.56);
 }
 
 .content__nav__editor:hover #a__menu__unpressed {
-    transition: 0.3s;
-    color: rgb(255, 255, 255, 0.8);
+  transition: .3s;
+  color: rgb(255,255,255,.8);
 }
 
 #button__menu__unpressed {
-    background-color: rgb(80, 129, 251, 0.16);
+  background-color: rgb(80,129,251,.16);
 }
 
 #a__menu__unpressed {
-    color: rgb(255, 255, 255, 0.56);
+  color: rgb(255,255,255,.56);
 }

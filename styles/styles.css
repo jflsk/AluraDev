@@ -4,94 +4,95 @@
 @import url("project.css");
 
 :root {
-    --background-color: #051d3b;
+  --background-color: #051d3b;
 }
 
 * {
-    font-family: Inter;
+  font-family: Inter;
 }
 
 body {  
-    background-color: var(--background-color);
-    margin: 2em;
-    color: #ffffff;
-    font-family: Inter;
+  margin: 2em;
+  color: #ffffff;
+  font-family: Inter;
+  background-color: var(--background-color);
 }
 
 .content {
-    display: flex;
-    padding: 2em 0 2em 0;
+  display: flex;
+  padding: 2em 0 2em 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 input[type=text] {
-    display: flex;
-    background-color: rgb(255, 255, 255, 0.16);
-    color: #ffffff;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 8px;
-    padding: 1em;
-    transition: 0.2s;
-    outline: none;
+  display: flex;
+  padding: 1em;
+  color: #ffffff;
+  background-color: rgb(255,255,255,.16);
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
 }
 
 input[type=text]:hover {
-    background-color: rgb(255, 255, 255, 0.24);
+  background-color: rgb(255,255,255,.24);
 
 }
 
 ::placeholder {
-    color: #ffffff;
-    opacity: 0.5;
+  color: #ffffff;
+  opacity: .5;
 }
 
 button {
-    width: 3em;
-    height: 3em;
-    border: none;
-    border-radius: 8px;
+  width: 3em;
+  height: 3em;
+  border: none;
+  border-radius: 8px;
 }
 
 button img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 textarea {
-    background-color: rgb(255, 255, 255, 0.16);
-    color: #ffffff;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 8px;
-    padding: 1em;
-    resize: none;
-    outline: none;
+
+  padding: 1em;
+  color: #ffffff;
+  background-color: rgb(255,255,255,.16);
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
 }
 
 textarea::-webkit-input-placeholder {
-    font-family: Inter;
+  font-family: Inter;
 }
 
 select {
-    background-color: rgb(255, 255, 255, 0.16);
-    box-sizing: border-box;
-    border: none;
-    border-radius: 8px;
-    padding: 1em;
-    color: #fff;
+  padding: 1em;
+  color: #ffffff;
+  background-color: rgb(255,255,255,.16);
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
 }
 
 #colorPicker {
-    background-color: rgb(255, 255, 255, 0);
-    border-color: #ffffff;
-    border-radius: 8px;
-    padding: 0.3em;
+  padding: .3em;
+  background-color: rgb(255,255,255, 0);
+  border-color: #ffffff;
+  border-radius: 8px;
 }
 
 #colorPicker::-webkit-color-swatch {
-    border-radius: 4px;
-    border: none;
+  border-radius: 4px;
+  border: none;
 }

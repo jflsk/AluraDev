@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
+    <link rel="stylesheet" href="./styles/highlight.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,7 @@
         <p>Harry</p>
     </div>
 </header>
+
 <body>
     <section class="content">
         <div class="content__nav">
@@ -35,8 +37,9 @@
                 <button id="button__menu__pressed">
                     <img src="./assets/Code Icon.svg" alt="Ícone Editor de Código">
                 </button>
-                <a id="a__menu__pressed" href="#">Editor de Código</a>
-            </div>
+            <a id="a__menu__pressed" href="#">Editor de Código</a>
+        </div>
+
             <div class="content__nav__community">
                 <button id="button__menu__unpressed">
                     <img src="./assets/Users Icon.svg" alt="Ícone Comunidade">
@@ -51,8 +54,9 @@
                     <div class="editor__bg__areaEdit__circles">
                         <div class="bg__areaEdit__circles red"></div> <div class="bg__areaEdit__circles yellow"></div> <div class="bg__areaEdit__circles green"></div>
                     </div>
-
-                    <code class="editor__bg__textCode" contenteditable="true"></code>
+                    <div class="codigo-wrapper">
+                        <code class="editor__bg__textCode hljs" contenteditable="true" aria-label="Editor de Código"></code>
+                    </div>
                 </div>
             </div>
             
@@ -61,26 +65,29 @@
         </div>
 
         <div class="content__project-desc">
-            <section class="content__project-desc__myProject">
-                <p class="content__project-desc__myProject__title">Meu Projeto</p>
+        <section class="content__project-desc__myProject">
+            <p class="content__project-desc__myProject__title">Meu Projeto</p>
 
-                <input type="text" id="title" placeholder="Nome do seu projeto">
+            <input type="text" id="title" placeholder="Nome do seu projeto">
 
-                <textarea class="content__project-desc__myProject__desc" placeholder="Descrição do seu projeto"></textarea>
-            </section>
+            <textarea class="content__project-desc__myProject__desc" placeholder="Descrição do seu projeto"></textarea>
+    </section>
 
-            <section class="content__project-desc__myCustom">
-                <p class="content__project-desc__myProject__title">Personalização</p>
+    <section class="content__project-desc__myCustom">
+        <p class="content__project-desc__myProject__title">Personalização</p>
 
-                <select>
-                    <option value="javascript">JavaScript</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                </select>
+        <select id="linguagem">
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
 
-                <input type="color" id="colorPicker">
+        <input type="color" id="colorPicker">
 
-                <button id="content__project-des__myCustom__saveButton">Salvar Projeto</button>
-            </section>        
+        <button id="content__project-des__myCustom__saveButton">Salvar Projeto</button>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
