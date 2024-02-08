@@ -1,6 +1,8 @@
 const linguagem = document.querySelector('.linguagem')
 const areaDoCodigo = document.querySelector('.codigo-wrapper')
 const botao = document.querySelector('#editor__highlight')
+const bgManipulada = document.querySelector('.content__editor__bg')
+const colorPicker = document.querySelector('#colorPicker')
 
 function aplicaHighlight() {
     const codigo = areaDoCodigo.innerText
@@ -11,4 +13,8 @@ function aplicaHighlight() {
 
 botao.addEventListener('click', () => {
     aplicaHighlight()
+})
+
+colorPicker.addEventListener('change', function() {
+    bgManipulada.style.backgroundColor = colorPicker.value;
 })
